@@ -2,6 +2,8 @@
 
 import streamlit as st
 import pandas as pd
+import tkinter as tk
+from  tkinter import filedialog
 
 """Teste de aplicação"""
 
@@ -11,9 +13,6 @@ def seleciona_arquivo():
         Retorna o path do arquivo.\n
         - Esse procedimento evita que a janela de navegação fique atrás da janela de trabalho do VSCode.\n
     """
-    #- carrega o módulo de navegação para a seleção com o mouse
-    import tkinter as tk
-    from  tkinter import filedialog
 
     root = tk.Tk()
     root.withdraw()  #- Oculta a janela principal (evita que a janela principal seja exibida por um breve momento)
